@@ -1,109 +1,153 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,800;1,100;1,800&display=swap');
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 13px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
-html{
-    font-size: 62.5%;
-}
-.container{
-    height: 100%;
-    width: 100%;
+
+body {
     background-image: url(./img/grande.jpg);
-    background-position: center;
     background-size: cover;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgb(0,0,0,0.5);
+
 }
-.form-box{
-    width: 370px;
-    height: 455px;
-    position: relative;
-    margin: 6% auto;
-    background: turquoise;
-    padding: 5px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.button-box{
-    width: 240px;
-    margin: 30px auto;
-    position: relative;
-    box-shadow: 0 0 20px 9px aqua;
-    border-radius: 30px;
-}
-.toggle-btn{
-    padding: 10px 22px;
-    cursor: pointer;
-    background: transparent;
-    border: 0px;
-    outline: none;
-    position: relative;
-}
-#elegir{
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 120px;
-    height: 100%;
-    background: linear-gradient(yellow,orange );
-    border-radius: 30px;
-    transition: 0.8s;
-}
-.redes-sociales{
-    margin: 35px auto;
-    text-align: center; 
-}
-.redes-sociales img{
-    width: 30px;
-    margin: 0 12px;
-    box-shadow: 0 0 20px 9px aqua;
-    cursor: pointer;
-    border-radius: 50%;
-}
-.input-group{
-    top: 180px;
-    position: absolute;
-    width: 200px;
-    transition: 0.8s;
-}
-.input-field{
+
+main {
     width: 100%;
-    padding: 10px 0;
-    margin: 5px 0;
-    border-left: 0;
-    border-top: 0;
-    border-right: 0;
-    border-bottom: 2px solid green;
-    outline: none;
-    background: transparent;
-}
-.submit-btn{
-    width: 85%;
-    padding: 10px 30px;
-    cursor: pointer;
-    display: block;
+    padding: 20px;
     margin: auto;
-    background: linear-gradient(yellow,orange );
-    border: 0px;
+    margin-top: 100px;
+    
+}
+
+.container__all {
+    background-color: turquoise;
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0;
+    box-shadow: 0 2px 30px rgba(29, 28, 28, 0.8);
+    display: flex;
+}
+
+.container__img {
+    width: 50%;
+    background-image: url(./img/pequeño.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.container__img h1 {
+    padding-top: 30px;
+    color: white;
+    font-size: 50px;
+    flex-direction: column;
+}
+
+.container__img p {
+    color: white;
+    padding-top: 10px;
+}
+
+.container__img .redes {
+    display: flex;
+    padding: 20px;
+    margin-top: 20px;
+    padding: 10px 10px;
+    align-items: center;
+
+}
+/* botones */
+.container__img .redes .facebook a{
+    color: white;
+    background-color: rgb(38, 38, 238);
+    font-size: 25px;
+    padding: 10px 23px;
+    text-decoration: none;
+    border-radius: 50px;
+    
+}.container__img .redes .facebook a:hover{
+
+    background-color: rgb(38, 38, 238,0.7);
+}
+.container__img .redes .twitter a{
+    color: white;
+    margin-left: 15px;
+    background-color: rgb(6, 166, 172);
+    font-size: 25px;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+}
+.container__img .redes .twitter a:hover{
+    background-color: rgb(0, 255, 255,0.7);
+}
+
+/* login */
+
+.container__login{
+    width: 50%;
+    justify-content: center;
+    padding: 80px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.container__login h2{
+    font-family: 'Righteous';
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.container__login form{
+    width: 100%;
+    padding: 20px;
+    align-items: end;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.container__login form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid blue;
+    font-size: 18px;
+    outline:none ;
+}
+.container__login form button{
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 20px;
     outline: none;
-    border-radius: 30px;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
 }
-.check-box{
-    margin: 30px 10px 30px 0;
+.container__login form button:hover{
+    background-color: rgba(4, 4, 136, 0.7);
 }
-span{
-    color: blanchedalmond;
-    font-size: 12px;
-    bottom: 64px;
-    position: center;
+
+.container__login ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
 }
-#login{
-    left: 50px;
-}
-#registrar{
-    left: 450px;
+.container__login .nombre{
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.26);
+    user-select: none ;
+
 }
